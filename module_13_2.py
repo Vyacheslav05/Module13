@@ -6,7 +6,7 @@ api = 'незабудьтеубратьключ'
 bot = Bot(token=api)
 dp = Dispatcher(bot, storage=MemoryStorage())
 
-@dp.message_handler(commands=['Start'])
+@dp.message_handler(commands=['start'])
 async def start_message(message):
     print('Привет! Я бот, помогающий твоему здоровью.')
 
